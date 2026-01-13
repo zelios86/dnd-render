@@ -1,13 +1,33 @@
 const axios = require('axios');
+const fs = require('fs').promises;
+const path = require('path');
 
 /**
  * D&D API Service
- * Integrates with Open5e API (2024 rules) and DnD5e API (fallback)
+ * Integrates with DnD5e API (5e 2014 base) and applies D&D 2024 (5.5e) overrides
  * Includes in-memory caching to reduce API calls
  */
 
 const OPEN5E_BASE_URL = process.env.OPEN5E_API_URL || 'https://api.open5e.com/v2';
 const DND5E_BASE_URL = process.env.DND5E_API_URL || 'https://www.dnd5eapi.co/api';
+const OVERRIDES_PATH = path.join(__dirname, '../data/dnd-2024-overrides.json');
+
+// Load 2024 overrides
+let overrides2024 = null;
+
+async function loadOverrides() {
+  if (!overrides2024) {
+    try {
+      const data = await fs.readFile(OVERRIDES_PATH, 'utf8');
+      overrides2024 = JSON.parse(data);
+      console.log('✓ D&D 2024 overrides loaded successfully');
+    } catch (error) {
+      console.warn('⚠ Failed to load D&D 2024 overrides:', error.message);
+      overrides2024 = { races: {}, classes: {}, rules: {} };
+    }
+  }
+  return overrides2024;
+}
 
 // In-memory cache with TTL (30 minutes)
 const cache = new Map();
@@ -88,16 +108,53 @@ async function getRaces() {
 }
 
 /**
+ * Apply 2024 overrides to race data
+ * @param {Object} raceData - Base race data from API
+ * @param {string} index - Race index
+ * @returns {Object} Race data with 2024 overrides applied
+ */
+function apply2024RaceOverrides(raceData, index) {
+  const overrides = overrides2024?.races?.[index];
+  if (!overrides) return raceData;
+
+  return {
+    ...raceData,
+    ...overrides,
+    _2024Updated: true,
+    _version: '5.2'
+  };
+}
+
+/**
  * Get specific race by index
  * @param {string} index - Race index/slug
- * @returns {Promise<Object>} Race data
+ * @returns {Promise<Object>} Race data with 2024 overrides
  */
 async function getRaceByIndex(index) {
-  const cacheKey = getCacheKey('race', { index });
+  const cacheKey = getCacheKey('race_2024', { index });
+
+  // Check cache first
+  const cached = getFromCache(cacheKey);
+  if (cached) return cached;
 
   try {
+    // Load overrides if not already loaded
+    await loadOverrides();
+
+    // Fetch base race data from API
     const url = `${DND5E_BASE_URL}/races/${index}`;
-    return await fetchWithCache(url, cacheKey);
+    const response = await axios.get(url, {
+      timeout: 10000,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    // Apply 2024 overrides
+    const raceData = apply2024RaceOverrides(response.data, index);
+
+    // Cache the result
+    setInCache(cacheKey, raceData);
+
+    return raceData;
   } catch (error) {
     throw new Error(`Failed to fetch race "${index}": ${error.message}`);
   }
@@ -121,16 +178,53 @@ async function getClasses() {
 }
 
 /**
+ * Apply 2024 overrides to class data
+ * @param {Object} classData - Base class data from API
+ * @param {string} index - Class index
+ * @returns {Object} Class data with 2024 overrides applied
+ */
+function apply2024ClassOverrides(classData, index) {
+  const overrides = overrides2024?.classes?.[index];
+  if (!overrides) return classData;
+
+  return {
+    ...classData,
+    ...overrides,
+    _2024Updated: true,
+    _version: '5.2'
+  };
+}
+
+/**
  * Get specific class by index
  * @param {string} index - Class index/slug
- * @returns {Promise<Object>} Class data
+ * @returns {Promise<Object>} Class data with 2024 overrides
  */
 async function getClassByIndex(index) {
-  const cacheKey = getCacheKey('class', { index });
+  const cacheKey = getCacheKey('class_2024', { index });
+
+  // Check cache first
+  const cached = getFromCache(cacheKey);
+  if (cached) return cached;
 
   try {
+    // Load overrides if not already loaded
+    await loadOverrides();
+
+    // Fetch base class data from API
     const url = `${DND5E_BASE_URL}/classes/${index}`;
-    return await fetchWithCache(url, cacheKey);
+    const response = await axios.get(url, {
+      timeout: 10000,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    // Apply 2024 overrides
+    const classData = apply2024ClassOverrides(response.data, index);
+
+    // Cache the result
+    setInCache(cacheKey, classData);
+
+    return classData;
   } catch (error) {
     throw new Error(`Failed to fetch class "${index}": ${error.message}`);
   }
@@ -309,6 +403,20 @@ async function getConditionByIndex(index) {
 }
 
 /**
+ * Get D&D 2024 rules and overrides info
+ * @returns {Promise<Object>} 2024 rules data
+ */
+async function get2024Rules() {
+  await loadOverrides();
+  return {
+    version: overrides2024.version,
+    description: overrides2024.description,
+    rules: overrides2024.rules,
+    backgrounds: overrides2024.backgrounds
+  };
+}
+
+/**
  * Clear cache (useful for testing or manual refresh)
  */
 function clearCache() {
@@ -340,6 +448,7 @@ module.exports = {
   getFeatByIndex,
   getConditions,
   getConditionByIndex,
+  get2024Rules,
   clearCache,
   getCacheStats
 };

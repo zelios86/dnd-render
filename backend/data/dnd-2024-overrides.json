@@ -1,0 +1,334 @@
+{
+  "version": "5.2",
+  "description": "D&D 2024 (5.5e) rules overrides and additions to base 5e API data",
+  "races": {
+    "human": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3,
+            "options": [
+              {"abilityScore": "strength", "bonus": 2},
+              {"abilityScore": "dexterity", "bonus": 2},
+              {"abilityScore": "constitution", "bonus": 2},
+              {"abilityScore": "intelligence", "bonus": 2},
+              {"abilityScore": "wisdom", "bonus": 2},
+              {"abilityScore": "charisma", "bonus": 2}
+            ]
+          }
+        }
+      ],
+      "traits": ["Resourceful", "Skillful", "Versatile"],
+      "features": [
+        {
+          "name": "Resourceful",
+          "description": "You gain Heroic Inspiration whenever you finish a Long Rest."
+        },
+        {
+          "name": "Skillful",
+          "description": "You gain proficiency in one skill of your choice."
+        },
+        {
+          "name": "Versatile",
+          "description": "You gain an Origin feat of your choice."
+        }
+      ]
+    },
+    "elf": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Darkvision", "Elven Lineage", "Fey Ancestry", "Keen Senses", "Trance"],
+      "features": [
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 60 feet."
+        },
+        {
+          "name": "Elven Lineage",
+          "description": "You are part of a lineage that grants you supernatural abilities. Choose one: High Elf (Cantrip), Wood Elf (Fleet of Foot), or Drow (Drow Magic)."
+        },
+        {
+          "name": "Fey Ancestry",
+          "description": "You have Advantage on saving throws you make to avoid or end the Charmed condition."
+        },
+        {
+          "name": "Keen Senses",
+          "description": "You have proficiency in the Perception skill."
+        },
+        {
+          "name": "Trance",
+          "description": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours while semiconscious."
+        }
+      ]
+    },
+    "dwarf": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Darkvision", "Dwarven Resilience", "Dwarven Toughness", "Forge Wise", "Stonecunning"],
+      "features": [
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 120 feet."
+        },
+        {
+          "name": "Dwarven Resilience",
+          "description": "You have Resistance to Poison damage and Advantage on saving throws to avoid or end the Poisoned condition."
+        },
+        {
+          "name": "Dwarven Toughness",
+          "description": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
+        },
+        {
+          "name": "Forge Wise",
+          "description": "You have proficiency with three tools of your choice from: Brewer's Supplies, Mason's Tools, or Smith's Tools."
+        },
+        {
+          "name": "Stonecunning",
+          "description": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You can use this a number of times equal to your Proficiency Bonus, regaining all uses on a Long Rest."
+        }
+      ]
+    },
+    "halfling": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Brave", "Halfling Nimbleness", "Lucky", "Naturally Stealthy"],
+      "features": [
+        {
+          "name": "Brave",
+          "description": "You have Advantage on saving throws to avoid or end the Frightened condition."
+        },
+        {
+          "name": "Halfling Nimbleness",
+          "description": "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space."
+        },
+        {
+          "name": "Lucky",
+          "description": "When you roll a 1 on a d20 Test, you can reroll the die, and you must use the new roll."
+        },
+        {
+          "name": "Naturally Stealthy",
+          "description": "You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you."
+        }
+      ]
+    },
+    "orc": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "size": "Medium",
+      "speed": 30,
+      "traits": ["Adrenaline Rush", "Darkvision", "Relentless Endurance"],
+      "features": [
+        {
+          "name": "Adrenaline Rush",
+          "description": "You can take the Dash action as a Bonus Action. When you do, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this a number of times equal to your Proficiency Bonus, regaining all uses on a Long Rest."
+        },
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 120 feet."
+        },
+        {
+          "name": "Relentless Endurance",
+          "description": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    "dragonborn": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Draconic Ancestry", "Breath Weapon", "Damage Resistance"],
+      "features": [
+        {
+          "name": "Draconic Ancestry",
+          "description": "You are a descendent of a dragon. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type."
+        },
+        {
+          "name": "Breath Weapon",
+          "description": "When you take the Attack action, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone or 30-foot line (your choice). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type associated with your Draconic Ancestry. On a successful save, it takes half damage. This damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, regaining all uses on a Long Rest."
+        },
+        {
+          "name": "Damage Resistance",
+          "description": "You have Resistance to the damage type associated with your Draconic Ancestry."
+        }
+      ]
+    },
+    "gnome": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Darkvision", "Gnomish Cunning", "Gnomish Lineage"],
+      "features": [
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 60 feet."
+        },
+        {
+          "name": "Gnomish Cunning",
+          "description": "You have Advantage on Intelligence, Wisdom, and Charisma saving throws."
+        },
+        {
+          "name": "Gnomish Lineage",
+          "description": "You are part of a lineage that grants you supernatural abilities. Choose one: Forest Gnome (Minor Illusion cantrip) or Rock Gnome (Artificer's Lore and Tinker)."
+        }
+      ]
+    },
+    "tiefling": {
+      "abilityBonuses": [
+        {
+          "description": "You can increase one ability score by 2 and another by 1, or increase three different ability scores by 1",
+          "choose": {
+            "type": "ability_score",
+            "count": 3
+          }
+        }
+      ],
+      "traits": ["Darkvision", "Fiendish Legacy", "Otherworldly Presence"],
+      "features": [
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 60 feet."
+        },
+        {
+          "name": "Fiendish Legacy",
+          "description": "You are the recipient of a fiendish legacy. Choose one: Abyssal (Poison spray cantrip), Chthonic (Chill touch cantrip), or Infernal (Fire bolt cantrip). You also learn additional spells at levels 3 and 5 based on your choice."
+        },
+        {
+          "name": "Otherworldly Presence",
+          "description": "You have Resistance to Fire damage."
+        }
+      ]
+    }
+  },
+  "classes": {
+    "fighter": {
+      "weaponMastery": {
+        "description": "Your training with weapons allows you to use the mastery properties of three kinds of Simple or Martial Melee weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices. At certain Fighter levels, you gain additional weapon mastery (level 4: 4 weapons, level 10: 5 weapons).",
+        "level": 1,
+        "count": 3
+      },
+      "changes": {
+        "secondWind": "You can use Second Wind a number of times equal to your Proficiency Bonus, regaining all uses on a Long Rest.",
+        "actionSurge": "Starting at 2nd level, you can push yourself beyond your normal limits. On your turn, you can take one additional action. Once you use this feature, you must finish a Short Rest or Long Rest before you can use it again. Starting at 17th level, you can use it twice before a rest."
+      }
+    },
+    "wizard": {
+      "changes": {
+        "arcaneRecovery": "Once per day when you finish a Short Rest, you can regain expended spell slots. The spell slots can have a combined level equal to or less than half your Wizard level (rounded up), and none of the slots can be 6th level or higher.",
+        "ritualAdept": "You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You don't need to have the spell prepared.",
+        "scholarlyPursuit": "You gain proficiency in one skill from: Arcana, History, Investigation, Medicine, Nature, or Religion."
+      }
+    },
+    "rogue": {
+      "changes": {
+        "sneakAttack": "Beginning at 1st level, you know how to exploit a foe's distraction. Once per turn, you can deal extra damage to one creature you hit with an Attack Roll if you have Advantage on the roll and the attack uses a Finesse or Ranged weapon. The extra damage is 1d6, and it increases as you gain levels (shown in Sneak Attack column of Rogue table).",
+        "cunningAction": "Starting at 2nd level, you can take a Bonus Action on each of your turns to take the Dash, Disengage, or Hide action."
+      }
+    },
+    "cleric": {
+      "changes": {
+        "channelDivinity": "At 2nd level, you gain the ability to channel divine energy directly from your deity. You start with two Channel Divinity options: Divine Order and Turn Undead. You can use Channel Divinity a number of times equal to your Proficiency Bonus, regaining all uses on a Long Rest.",
+        "divineOrder": "You can choose Protector (Heavy armor proficiency and Martial weapon proficiency) or Thaumaturge (Bonus cantrip and +1 to cantrip damage at level 1)."
+      }
+    },
+    "barbarian": {
+      "changes": {
+        "rage": "You can enter a rage as a Bonus Action. While raging, you gain bonus damage to melee attacks using Strength, resistance to physical damage, and advantage on Strength checks and saving throws. Your rage lasts for 10 minutes or until you are knocked unconscious. You can use Rage a number of times shown in the Rage Uses column (2 at level 1), regaining all uses on a Long Rest.",
+        "weaponMastery": "Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice."
+      }
+    }
+  },
+  "rules": {
+    "abilityScoreGeneration": {
+      "standardArray": [15, 14, 13, 12, 10, 8],
+      "pointBuy": {
+        "pointsTotal": 27,
+        "costs": {
+          "8": 0,
+          "9": 1,
+          "10": 2,
+          "11": 3,
+          "12": 4,
+          "13": 5,
+          "14": 7,
+          "15": 9
+        },
+        "min": 8,
+        "max": 15
+      }
+    },
+    "heroicInspiration": {
+      "description": "Heroic Inspiration is a special benefit that can be granted by the DM or earned through certain features. When you have Heroic Inspiration, you can expend it to reroll any d20 Test (attack roll, saving throw, or ability check), and you must use the new roll."
+    },
+    "weaponMastery": {
+      "description": "If you have the Weapon Mastery feature, you can use the special properties of weapons you've mastered. Each weapon has a mastery property that provides tactical benefits in combat."
+    }
+  },
+  "backgrounds": {
+    "description": "In D&D 2024, backgrounds have been significantly expanded. Each background provides: +2 to one ability score and +1 to another (or +1 to three different scores), proficiency in two skills, proficiency with one tool, a language, and a 1st-level Origin feat.",
+    "examples": {
+      "acolyte": {
+        "abilityScores": {"wisdom": 2, "intelligence": 1},
+        "skills": ["Insight", "Religion"],
+        "tool": "Calligrapher's Supplies",
+        "language": "Any",
+        "feat": "Magic Initiate (Cleric)"
+      },
+      "criminal": {
+        "abilityScores": {"dexterity": 2, "intelligence": 1},
+        "skills": ["Sleight of Hand", "Stealth"],
+        "tool": "Thieves' Tools",
+        "language": "Any",
+        "feat": "Alert"
+      },
+      "sage": {
+        "abilityScores": {"intelligence": 2, "wisdom": 1},
+        "skills": ["Arcana", "History"],
+        "tool": "Calligrapher's Supplies",
+        "language": "Any",
+        "feat": "Magic Initiate (Wizard)"
+      }
+    }
+  }
+}

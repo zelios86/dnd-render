@@ -1,3 +1,1019 @@
 {
-  "characters": []
+  "characters": [
+    {
+      "id": "93f743ef-f745-46f0-9a42-708f2ca07315",
+      "name": "Thorin Ironforge",
+      "race": {
+        "name": "Dwarf",
+        "index": "dwarf",
+        "abilityBonuses": [
+          {
+            "abilityScore": "constitution",
+            "bonus": 2
+          }
+        ],
+        "size": "Medium",
+        "speed": 25
+      },
+      "class": {
+        "name": "Fighter",
+        "index": "fighter",
+        "hitDie": 10,
+        "savingThrows": [
+          "strength",
+          "constitution"
+        ]
+      },
+      "level": 1,
+      "abilityScores": {
+        "strength": 16,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 10,
+        "wisdom": 13,
+        "charisma": 8
+      },
+      "background": null,
+      "skills": [
+        {
+          "name": "acrobatics",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "animal handling",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "arcana",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "athletics",
+          "abilityScore": "strength",
+          "proficient": false,
+          "expertise": false,
+          "value": 3
+        },
+        {
+          "name": "deception",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "history",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "insight",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "intimidation",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "investigation",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "medicine",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "nature",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "perception",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "performance",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "persuasion",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "religion",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "sleight of hand",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "stealth",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "survival",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        }
+      ],
+      "equipment": [],
+      "spellcasting": null,
+      "features": [],
+      "hitDice": {
+        "total": 1,
+        "current": 1,
+        "type": "d10"
+      },
+      "backstory": "",
+      "notes": "",
+      "createdAt": "2026-01-12T16:48:02.545Z",
+      "updatedAt": "2026-01-12T16:48:02.548Z",
+      "calculatedStats": {
+        "proficiencyBonus": 2,
+        "finalAbilityScores": {
+          "strength": 16,
+          "dexterity": 12,
+          "constitution": 17,
+          "intelligence": 10,
+          "wisdom": 13,
+          "charisma": 8
+        },
+        "abilityModifiers": {
+          "strength": 3,
+          "dexterity": 1,
+          "constitution": 3,
+          "intelligence": 0,
+          "wisdom": 1,
+          "charisma": -1
+        },
+        "savingThrows": {
+          "strength": {
+            "value": 5,
+            "proficient": true
+          },
+          "dexterity": {
+            "value": 1,
+            "proficient": false
+          },
+          "constitution": {
+            "value": 5,
+            "proficient": true
+          },
+          "intelligence": {
+            "value": 0,
+            "proficient": false
+          },
+          "wisdom": {
+            "value": 1,
+            "proficient": false
+          },
+          "charisma": {
+            "value": -1,
+            "proficient": false
+          }
+        },
+        "initiative": 1,
+        "armorClass": 11,
+        "speed": 25,
+        "maxHitPoints": 13,
+        "currentHitPoints": 13
+      }
+    },
+    {
+      "id": "8b53f424-f5af-480a-9c3d-8cef318f8bc3",
+      "name": "sdsd",
+      "race": {
+        "name": "Half-Orc",
+        "index": "half-orc",
+        "abilityBonuses": [
+          {
+            "abilityScore": "str",
+            "bonus": 2
+          },
+          {
+            "abilityScore": "con",
+            "bonus": 1
+          }
+        ],
+        "size": "Medium",
+        "speed": 30,
+        "traits": []
+      },
+      "class": {
+        "name": "Barbarian",
+        "index": "barbarian",
+        "hitDie": 12,
+        "proficiencies": [
+          "Light Armor",
+          "Medium Armor",
+          "Shields",
+          "Simple Weapons",
+          "Martial Weapons",
+          "Saving Throw: STR",
+          "Saving Throw: CON"
+        ],
+        "savingThrows": [
+          "str",
+          "con"
+        ]
+      },
+      "level": 1,
+      "abilityScores": {
+        "strength": 12,
+        "dexterity": 15,
+        "constitution": 10,
+        "intelligence": 10,
+        "wisdom": 18,
+        "charisma": 10
+      },
+      "background": null,
+      "skills": [
+        {
+          "name": "acrobatics",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 2
+        },
+        {
+          "name": "animal handling",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 4
+        },
+        {
+          "name": "arcana",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "athletics",
+          "abilityScore": "strength",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "deception",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "history",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "insight",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 4
+        },
+        {
+          "name": "intimidation",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "investigation",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "medicine",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 4
+        },
+        {
+          "name": "nature",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "perception",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 4
+        },
+        {
+          "name": "performance",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "persuasion",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "religion",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "sleight of hand",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 2
+        },
+        {
+          "name": "stealth",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 2
+        },
+        {
+          "name": "survival",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 4
+        }
+      ],
+      "equipment": [
+        {
+          "name": "Greataxe",
+          "index": "greataxe",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "name": "Handaxe",
+          "index": "handaxe",
+          "quantity": 2,
+          "equipped": false
+        },
+        {
+          "name": "Explorer's Pack",
+          "index": "explorers-pack",
+          "quantity": 1,
+          "equipped": false
+        },
+        {
+          "name": "Javelin",
+          "index": "javelin",
+          "quantity": 4,
+          "equipped": false
+        }
+      ],
+      "spellcasting": null,
+      "features": [],
+      "hitDice": {
+        "total": 1,
+        "current": 1,
+        "type": "d12"
+      },
+      "backstory": "sdsd",
+      "notes": "sdsd",
+      "createdAt": "2026-01-12T17:45:02.475Z",
+      "updatedAt": "2026-01-12T17:45:02.475Z",
+      "calculatedStats": {
+        "proficiencyBonus": 2,
+        "finalAbilityScores": {
+          "strength": 12,
+          "dexterity": 15,
+          "constitution": 10,
+          "intelligence": 10,
+          "wisdom": 18,
+          "charisma": 10
+        },
+        "abilityModifiers": {
+          "strength": 1,
+          "dexterity": 2,
+          "constitution": 0,
+          "intelligence": 0,
+          "wisdom": 4,
+          "charisma": 0
+        },
+        "savingThrows": {
+          "strength": {
+            "value": 1,
+            "proficient": false
+          },
+          "dexterity": {
+            "value": 2,
+            "proficient": false
+          },
+          "constitution": {
+            "value": 0,
+            "proficient": false
+          },
+          "intelligence": {
+            "value": 0,
+            "proficient": false
+          },
+          "wisdom": {
+            "value": 4,
+            "proficient": false
+          },
+          "charisma": {
+            "value": 0,
+            "proficient": false
+          }
+        },
+        "initiative": 2,
+        "armorClass": 12,
+        "speed": 30,
+        "maxHitPoints": 12,
+        "currentHitPoints": 12
+      }
+    },
+    {
+      "id": "49de418f-6908-4e34-9523-8ea5f1df8f00",
+      "name": "ssss",
+      "race": {
+        "name": "Dragonborn",
+        "index": "dragonborn",
+        "abilityBonuses": [
+          {
+            "abilityScore": "str",
+            "bonus": 2
+          },
+          {
+            "abilityScore": "cha",
+            "bonus": 1
+          }
+        ],
+        "size": "Medium",
+        "speed": 30,
+        "traits": []
+      },
+      "class": {
+        "name": "Bard",
+        "index": "bard",
+        "hitDie": 8,
+        "proficiencies": [
+          "Light Armor",
+          "Simple Weapons",
+          "Longswords",
+          "Rapiers",
+          "Shortswords",
+          "Hand crossbows",
+          "Saving Throw: DEX",
+          "Saving Throw: CHA"
+        ],
+        "savingThrows": [
+          "dex",
+          "cha"
+        ]
+      },
+      "level": 1,
+      "abilityScores": {
+        "strength": 15,
+        "dexterity": 13,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 12,
+        "charisma": 8
+      },
+      "background": null,
+      "skills": [
+        {
+          "name": "acrobatics",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "animal handling",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "arcana",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "athletics",
+          "abilityScore": "strength",
+          "proficient": false,
+          "expertise": false,
+          "value": 2
+        },
+        {
+          "name": "deception",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "history",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "insight",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "intimidation",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "investigation",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "medicine",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "nature",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "perception",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "performance",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "persuasion",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": -1
+        },
+        {
+          "name": "religion",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "sleight of hand",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "stealth",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        },
+        {
+          "name": "survival",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 1
+        }
+      ],
+      "equipment": [
+        {
+          "name": "Rapier",
+          "index": "rapier",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "name": "Lute",
+          "index": "lute",
+          "quantity": 1,
+          "equipped": false
+        },
+        {
+          "name": "Leather Armor",
+          "index": "leather-armor",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "name": "Dagger",
+          "index": "dagger",
+          "quantity": 1,
+          "equipped": false
+        }
+      ],
+      "spellcasting": null,
+      "features": [],
+      "hitDice": {
+        "total": 1,
+        "current": 1,
+        "type": "d8"
+      },
+      "backstory": "sd",
+      "notes": "sdsd",
+      "createdAt": "2026-01-13T08:40:23.300Z",
+      "updatedAt": "2026-01-13T08:40:23.301Z",
+      "calculatedStats": {
+        "proficiencyBonus": 2,
+        "finalAbilityScores": {
+          "strength": 15,
+          "dexterity": 13,
+          "constitution": 14,
+          "intelligence": 10,
+          "wisdom": 12,
+          "charisma": 8
+        },
+        "abilityModifiers": {
+          "strength": 2,
+          "dexterity": 1,
+          "constitution": 2,
+          "intelligence": 0,
+          "wisdom": 1,
+          "charisma": -1
+        },
+        "savingThrows": {
+          "strength": {
+            "value": 2,
+            "proficient": false
+          },
+          "dexterity": {
+            "value": 1,
+            "proficient": false
+          },
+          "constitution": {
+            "value": 2,
+            "proficient": false
+          },
+          "intelligence": {
+            "value": 0,
+            "proficient": false
+          },
+          "wisdom": {
+            "value": 1,
+            "proficient": false
+          },
+          "charisma": {
+            "value": -1,
+            "proficient": false
+          }
+        },
+        "initiative": 1,
+        "armorClass": 11,
+        "speed": 30,
+        "maxHitPoints": 10,
+        "currentHitPoints": 10
+      }
+    },
+    {
+      "id": "b3d501ef-9e73-4e4d-8319-8a9bbed93c8f",
+      "name": "sd",
+      "race": {
+        "name": "Dwarf",
+        "index": "dwarf",
+        "abilityBonuses": [
+          {
+            "abilityScore": "con",
+            "bonus": 2
+          }
+        ],
+        "size": "Medium",
+        "speed": 25,
+        "traits": []
+      },
+      "class": {
+        "name": "Bard",
+        "index": "bard",
+        "hitDie": 8,
+        "proficiencies": [
+          "Light Armor",
+          "Simple Weapons",
+          "Longswords",
+          "Rapiers",
+          "Shortswords",
+          "Hand crossbows",
+          "Saving Throw: DEX",
+          "Saving Throw: CHA"
+        ],
+        "savingThrows": [
+          "dex",
+          "cha"
+        ]
+      },
+      "level": 1,
+      "abilityScores": {
+        "strength": 10,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 10
+      },
+      "background": null,
+      "skills": [
+        {
+          "name": "acrobatics",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "animal handling",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "arcana",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "athletics",
+          "abilityScore": "strength",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "deception",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "history",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "insight",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "intimidation",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "investigation",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "medicine",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "nature",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "perception",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "performance",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "persuasion",
+          "abilityScore": "charisma",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "religion",
+          "abilityScore": "intelligence",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "sleight of hand",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "stealth",
+          "abilityScore": "dexterity",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        },
+        {
+          "name": "survival",
+          "abilityScore": "wisdom",
+          "proficient": false,
+          "expertise": false,
+          "value": 0
+        }
+      ],
+      "equipment": [
+        {
+          "name": "Rapier",
+          "index": "rapier",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "name": "Lute",
+          "index": "lute",
+          "quantity": 1,
+          "equipped": false
+        },
+        {
+          "name": "Leather Armor",
+          "index": "leather-armor",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "name": "Dagger",
+          "index": "dagger",
+          "quantity": 1,
+          "equipped": false
+        }
+      ],
+      "spellcasting": null,
+      "features": [],
+      "hitDice": {
+        "total": 1,
+        "current": 1,
+        "type": "d8"
+      },
+      "backstory": "sd",
+      "notes": "sd",
+      "createdAt": "2026-01-13T09:43:43.536Z",
+      "updatedAt": "2026-01-13T09:43:43.537Z",
+      "calculatedStats": {
+        "proficiencyBonus": 2,
+        "finalAbilityScores": {
+          "strength": 10,
+          "dexterity": 10,
+          "constitution": 10,
+          "intelligence": 10,
+          "wisdom": 10,
+          "charisma": 10
+        },
+        "abilityModifiers": {
+          "strength": 0,
+          "dexterity": 0,
+          "constitution": 0,
+          "intelligence": 0,
+          "wisdom": 0,
+          "charisma": 0
+        },
+        "savingThrows": {
+          "strength": {
+            "value": 0,
+            "proficient": false
+          },
+          "dexterity": {
+            "value": 0,
+            "proficient": false
+          },
+          "constitution": {
+            "value": 0,
+            "proficient": false
+          },
+          "intelligence": {
+            "value": 0,
+            "proficient": false
+          },
+          "wisdom": {
+            "value": 0,
+            "proficient": false
+          },
+          "charisma": {
+            "value": 0,
+            "proficient": false
+          }
+        },
+        "initiative": 0,
+        "armorClass": 10,
+        "speed": 25,
+        "maxHitPoints": 8,
+        "currentHitPoints": 8
+      }
+    }
+  ]
 }

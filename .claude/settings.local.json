@@ -6,7 +6,15 @@
       "Bash(curl:*)",
       "Bash(python3:*)",
       "Bash(lsof:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(ps:*)",
+      "Bash(npm create:*)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npm run build:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run dev:*)",
+      "Bash(kill:*)",
+      "Bash(node:*)"
     ]
   }
 }

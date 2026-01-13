@@ -144,6 +144,16 @@ router.get('/conditions/:index', async (req, res, next) => {
   }
 });
 
+// D&D 2024 rules
+router.get('/rules/2024', async (req, res, next) => {
+  try {
+    const rules = await dndApiService.get2024Rules();
+    res.json(rules);
+  } catch (error) {
+    next(error);
+  }
+});
+
 // Cache management (for debugging)
 router.get('/cache/stats', (req, res) => {
   const stats = dndApiService.getCacheStats();

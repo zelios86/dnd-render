@@ -1,0 +1,27 @@
+{
+  "name": "Thorin Ironforge",
+  "race": {
+    "name": "Dwarf",
+    "index": "dwarf",
+    "abilityBonuses": [
+      {"abilityScore": "constitution", "bonus": 2}
+    ],
+    "size": "Medium",
+    "speed": 25
+  },
+  "class": {
+    "name": "Fighter",
+    "index": "fighter",
+    "hitDie": 10,
+    "savingThrows": ["strength", "constitution"]
+  },
+  "level": 1,
+  "abilityScores": {
+    "strength": 16,
+    "dexterity": 12,
+    "constitution": 15,
+    "intelligence": 10,
+    "wisdom": 13,
+    "charisma": 8
+  }
+}
